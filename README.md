@@ -82,7 +82,7 @@ webpack compiled successfully
 
 5 - Nessa tela, você deverá ver um resultado como mostrado na figura:
 
-
+![tela_sistema](https://user-images.githubusercontent.com/455444/203852214-cdf0d933-bd08-4303-87fb-735fae74c109.png)
 
 ## Dúvidas?
 
