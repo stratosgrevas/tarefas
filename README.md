@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+# SISTEMA REACT CADASTRO DE TAREFAS - CRUD SIMPLES
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Desenvolvedor: Allan Gleison Santos
 
-## Available Scripts
+## SISTEMA
 
-In the project directory, you can run:
+Nesse sistema será possível
 
-### `npm start`
+- Listar todos as Tarefas.
+- Adicionar uma nova Tarefa.
+- Alterar o registro de uma Tarefa.
+- Deletar uma Tarefa.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Pré Requisitos para o funcionamento do sistema
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1 - Ter instalado o cliente de banco de dados MYSQL ( Pode usar por exemplo o XAMPP que já vem com o MYSQL )
 
-### `npm test`
+2 - Ter instalado o NODEJS
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3 - Ter instalado o pacote NPM
 
-### `npm run build`
+## Instruções para API e FRONT (react)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1 - Execute o MYSQL e crie um novo banco de dados com o nome: <strong>"todo"</strong>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2 - Pelo console, navegue até o diretório do projeto e então navegue ao subdiretório <strong>"client"</strong>:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3 - aqui execute o comando: <strong>"npm install"</strong> para atualização dos pacotes npm do projeto
 
-### `npm run eject`
+4 - Ainda no diretório do inicial do projeto, navegue ao subdiretório <strong>"server"</strong>: 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+5 - aqui execute o comando: <strong>"npm install"</strong> para atualização dos pacotes npm do projeto
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+6 - Ainda no subdiretório "server" e, com o banco já criado, execute, pelo console o seguinte comando para criação da tabela e dos primeiros registros no banco de dados:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<pre>node create-table.js</pre>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+7 - O sistema deverá exibir as mensagens de sucesso como abaixo:
 
-## Learn More
+<pre>
+D:\DESENV\REACT\tarefas\server>node create-table.js
+tabela 'tb_todos' criada com sucesso !
+primeiros registros adicionados com sucesso !
+</pre>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+8 - Ainda no subdiretório "server", execute o comando <strong>"nodemon server.js"</strong> para iniciar o servidor da API do sistema.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Você deverá ver no console o seguinte resultado:
 
-### Code Splitting
+<pre>D:\DESENV\DEVNODEJS\teste-node>nodemon server.js
+[nodemon] 2.0.20
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node server.js`
+API funcionando em http://localhost:3000
+</pre>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Instruções para executar o SISTEMA no navegador
 
-### Analyzing the Bundle Size
+1 - Com a API funcionando, abra outro console e, navegue até o subdiretório <strong>"client"</strong>:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+2 - Execute o comando <strong>"npm start"</strong>
 
-### Making a Progressive Web App
+3 - No console, você deverá ver o seguinte resultado:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<pre>
+Compiled successfully!
 
-### Advanced Configuration
+You can now view crud in the browser.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+  Local:            http://localhost:3000        
+  On Your Network:  http://192.168.0.17:3000     
 
-### Deployment
+Note that the development build is not optimized.
+To create a production build, use npm run build. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+webpack compiled successfully
+</pre>
 
-### `npm run build` fails to minify
+4 - Automaticamente o React se encarregará de abrir uma aba no navegador padrão apontando para o endereço: <strong>"http://localhost:3000/"</strong>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+5 - Nessa tela, você deverá ver um resultado como mostrado na figura:
+
+
+
+## Dúvidas?
+
+Quaisquer dúvidas que você venha a ter, entre em contato com stratosgrevas@gmail.com
