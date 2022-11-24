@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.register-container {
+  padding: 10px 20px;
+  width: 30%;
+  height: max-content;
+  margin-top: 20px;
+  border: 3px solid black;
+  border-radius: 5px;
+}
+
+.register-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.register-input {
+  display: block;
+  margin: 10px auto;
+  padding: 7px 0;
+  width: 100%;
+}
+
+.register-button {
+  padding: 6px 12px;
+  float: right;
+}
