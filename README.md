@@ -25,7 +25,11 @@ Nesse sistema será possível
 
 2 - Pelo console, navegue até o diretório do projeto e então navegue ao subdiretório <strong>"client"</strong>:
 
-3 - aqui execute o comando: <strong>"npm install"</strong> para atualização dos pacotes npm do projeto
+3 - Aqui execute o comando: <strong>"npm install"</strong> para atualização dos pacotes npm do projeto.
+
+Obs: Caso tenha algum problema na instalação de pacotes e dependências, poderá executar o seguinte comando:
+
+<pre>npm install --legacy-peer-deps</pre>
 
 4 - Ainda no diretório do inicial do projeto, navegue ao subdiretório <strong>"server"</strong>: 
 
